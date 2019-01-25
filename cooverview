@@ -66,7 +66,7 @@ sub create_details_html {
   my $tags = [];
   my $info;
 
-  my $pull_prefix="docker pull $config->{pull_host}".(($config->{pull_port}) ? ":$config->{pull_port}/" : "/");
+  my $pull_prefix="podman pull $config->{pull_host}".(($config->{pull_port}) ? ":$config->{pull_port}/" : "/");
 
   my $data = {
     name => $rep,
